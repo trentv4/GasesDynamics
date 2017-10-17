@@ -35,7 +35,7 @@ public class ItemGasthrower extends Item
 			{
 				for(int i = 0; i < distance; i++)
 				{
-					Vec3d pos = player.getPositionEyes(0f).add(player.getLookVec().scale(i + 1));
+					Vec3d pos = player.getPositionEyes(0f).add(player.getLookVec().scale(i + 2));
 					GFManipulationAPI.addGasLevel(new BlockPos(pos), world, heldGas, 8);
 
 					if(distance < 5) distance++;
