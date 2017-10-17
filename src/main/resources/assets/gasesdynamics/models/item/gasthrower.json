@@ -1,6 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "gasesdynamics:item/gasthrower"
+        "layer0": "gasesdynamics:item/gasthrower",
+        "layer1": "gasesdynamics:item/gasthrower_overlay"
     }
 }
