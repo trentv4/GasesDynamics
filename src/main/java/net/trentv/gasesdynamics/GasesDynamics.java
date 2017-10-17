@@ -1,4 +1,4 @@
-package net.trentv.gases;
+package net.trentv.gasesdynamics;
 
 import org.apache.logging.log4j.Logger;
 
@@ -11,10 +11,10 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.trentv.gases.common.CommonProxy;
-import net.trentv.gases.common.GasesDynamicsObjects;
+import net.trentv.gasesdynamics.common.CommonProxy;
+import net.trentv.gasesdynamics.common.GasesDynamicsObjects;
 
-@Mod(modid = GasesDynamics.MODID, version = GasesDynamics.VERSION, acceptedMinecraftVersions = "1.10.2", dependencies = "required-after:gasesframework")
+@Mod(modid = GasesDynamics.MODID, version = GasesDynamics.VERSION, acceptedMinecraftVersions = "1.12.2", dependencies = "required-after:gasesframework")
 public class GasesDynamics
 {
 	public static final String MODID = "gasesdynamics";

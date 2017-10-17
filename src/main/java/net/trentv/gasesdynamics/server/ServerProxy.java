@@ -1,6 +1,6 @@
-package net.trentv.gases.server;
+package net.trentv.gasesdynamics.server;
 
-import net.trentv.gases.common.CommonProxy;
+import net.trentv.gasesdynamics.common.CommonProxy;
 
 public class ServerProxy extends CommonProxy
 {

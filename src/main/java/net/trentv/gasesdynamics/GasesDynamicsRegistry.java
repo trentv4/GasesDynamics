@@ -1,4 +1,4 @@
-package net.trentv.gases;
+package net.trentv.gasesdynamics;
 
 import java.util.ArrayList;
 
@@ -20,7 +20,8 @@ public class GasesDynamicsRegistry
 
 	public static void registerBlock(Block... toRegister)
 	{
-		for (Block in : toRegister) blocks.add(in);
+		for (Block in : toRegister)
+			blocks.add(in);
 	}
 
 	public static void registerBlockAndItem(Block... toRegister)
@@ -36,9 +37,10 @@ public class GasesDynamicsRegistry
 
 	public static void registerItem(Item... toRegister)
 	{
-		for (Item in : toRegister) items.add(in);
+		for (Item in : toRegister)
+			items.add(in);
 	}
-	
+
 	// Events
 	@SubscribeEvent
 	public void registerRenderers(ModelRegistryEvent event)
@@ -48,16 +50,18 @@ public class GasesDynamicsRegistry
 			ModelLoader.setCustomModelResourceLocation(obj, 0, new ModelResourceLocation(obj.getRegistryName(), "inventory"));
 		}
 	}
-	
+
 	@SubscribeEvent
 	public void registerBlocks(RegistryEvent.Register<Block> event)
 	{
-		for (Block block : blocks) event.getRegistry().register(block);
+		for (Block block : blocks)
+			event.getRegistry().register(block);
 	}
 
 	@SubscribeEvent
 	public void registerItems(RegistryEvent.Register<Item> event)
 	{
-		for (Item item : items) event.getRegistry().register(item);
+		for (Item item : items)
+			event.getRegistry().register(item);
 	}
 }

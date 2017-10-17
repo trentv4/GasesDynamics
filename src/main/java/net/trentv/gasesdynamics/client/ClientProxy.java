@@ -1,7 +1,7 @@
-package net.trentv.gases.client;
+package net.trentv.gasesdynamics.client;
 
 import net.minecraftforge.common.MinecraftForge;
-import net.trentv.gases.common.CommonProxy;
+import net.trentv.gasesdynamics.common.CommonProxy;
 
 public class ClientProxy extends CommonProxy
 {
