@@ -4,11 +4,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.RenderSnowball;
-import net.minecraft.init.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.client.registry.IRenderFactory;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.trentv.gasesdynamics.common.CommonProxy;
+import net.trentv.gasesdynamics.common.GasesDynamicsObjects;
 import net.trentv.gasesdynamics.common.entity.projectile.EntityGasGrenade;
 
 public class ClientProxy extends CommonProxy
@@ -31,8 +31,7 @@ public class ClientProxy extends CommonProxy
 		@Override
 		public Render<? super EntityGasGrenade> createRenderFor(RenderManager manager)
 		{
-			Minecraft m = Minecraft.getMinecraft();
-			return new RenderSnowball<EntityGasGrenade>(m.getRenderManager(), Items.EGG, m.getRenderItem());
+			return new RenderSnowball<EntityGasGrenade>(manager, GasesDynamicsObjects.GAS_GRENADE, Minecraft.getMinecraft().getRenderItem());
 		}
 
 	}
