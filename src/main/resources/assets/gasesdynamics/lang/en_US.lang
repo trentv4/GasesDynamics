@@ -1,3 +1,5 @@
 itemGroup.gasesdynamics=Gases Dynamics
 
 item.gasthrower.name=Gas Thrower
+item.gasgrenade.name=Gas Grenade
+item.gasgrenade_lit.name=Gas Grenade (lit)
