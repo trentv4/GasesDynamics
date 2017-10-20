@@ -21,9 +21,9 @@ public class ItemGasGrenade extends Item
 {
 	public ItemGasGrenade()
 	{
-		setRegistryName(GasesDynamics.MODID, "gasgrenade");
+		setRegistryName(GasesDynamics.MODID, "gas_grenade");
 		setCreativeTab(GasesDynamics.CREATIVE_TAB);
-		setUnlocalizedName("gasgrenade");
+		setUnlocalizedName("gas_grenade");
 	}
 
 	@Override

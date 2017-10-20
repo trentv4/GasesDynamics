@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "gasesdynamics:item/gasgrenade",
-        "layer1": "gasesdynamics:item/gasgrenade_overlay"
-    }
-}
