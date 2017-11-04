@@ -11,8 +11,10 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.trentv.gasesdynamics.common.CommonProxy;
 import net.trentv.gasesdynamics.common.GasesDynamicsObjects;
+import net.trentv.gasesdynamics.common.GuiHandlerGasesDynamics;
 
 @Mod(modid = GasesDynamics.MODID, version = GasesDynamics.VERSION, acceptedMinecraftVersions = "1.12.2", dependencies = "required-after:gasesframework")
 public class GasesDynamics
@@ -21,6 +23,9 @@ public class GasesDynamics
 	public static final String VERSION = "1.0.0";
 
 	public static final GasesDynamicsCreativeTab CREATIVE_TAB = new GasesDynamicsCreativeTab("gasesdynamics");
+
+	@Mod.Instance(MODID)
+	public static GasesDynamics instance;
 
 	public static Logger logger;
 
@@ -33,6 +38,8 @@ public class GasesDynamics
 		logger = event.getModLog();
 
 		GasesDynamicsObjects.init();
+
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandlerGasesDynamics());
 
 		proxy.registerEventHandlers();
 		proxy.registerRenderers();
