@@ -2,12 +2,11 @@ package net.trentv.gasesdynamics.client.gui;
 
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.translation.I18n;
 import net.trentv.gasesdynamics.GasesDynamics;
 
-@SuppressWarnings("deprecation")
 public class GuiGasFurnace extends GuiContainer
 {
 	private static final ResourceLocation BACKGROUND = new ResourceLocation(GasesDynamics.MODID, "textures/gui/container/gas_furnace.png");
@@ -52,8 +51,8 @@ public class GuiGasFurnace extends GuiContainer
 	@Override
 	protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
 	{
-		String name = I18n.translateToLocal("tile.gas_furnace.name");
+		String name = I18n.format("tile.gas_furnace.name");
 		fontRenderer.drawString(name, this.xSize / 2 - this.fontRenderer.getStringWidth(name) / 2, 6, 0x404040);
-		fontRenderer.drawString(I18n.translateToLocal("container.inventory"), 8, this.ySize - 96 + 2, 0x404040);
+		fontRenderer.drawString(I18n.format("container.inventory"), 8, this.ySize - 96 + 2, 0x404040);
 	}
 }
