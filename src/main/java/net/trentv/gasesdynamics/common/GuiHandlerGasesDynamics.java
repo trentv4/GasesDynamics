@@ -6,8 +6,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.IGuiHandler;
 import net.trentv.gasesdynamics.GasesDynamics;
+import net.trentv.gasesdynamics.client.gui.GuiGasFurnace;
 import net.trentv.gasesdynamics.common.tileentity.TileEntityGasFurnace.ContainerGasFurnace;
-import net.trentv.gasesdynamics.common.tileentity.TileEntityGasFurnace.GuiGasFurnace;
 
 public class GuiHandlerGasesDynamics implements IGuiHandler
 {

@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "gasesdynamics:block/gas_furnace_iron_side",
+        "north": "gasesdynamics:block/gas_furnace_iron_front_0",
+        "up": "gasesdynamics:block/gas_furnace_iron_top",
+        "down": "gasesdynamics:block/gas_furnace_iron_bottom"
+    }
+}

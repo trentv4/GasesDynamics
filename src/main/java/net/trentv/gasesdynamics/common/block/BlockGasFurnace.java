@@ -18,7 +18,8 @@ public class BlockGasFurnace extends Block
 	public BlockGasFurnace(Material materialIn)
 	{
 		super(materialIn);
-		setRegistryName(GasesDynamics.MODID, "gasfurnace");
+		setRegistryName(GasesDynamics.MODID, "gas_furnace");
+		setUnlocalizedName("gas_furnace");
 	}
 
 	@Override

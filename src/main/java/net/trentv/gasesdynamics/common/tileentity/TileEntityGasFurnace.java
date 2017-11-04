@@ -2,8 +2,6 @@ package net.trentv.gasesdynamics.common.tileentity;
 
 import javax.annotation.Nullable;
 
-import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -11,13 +9,11 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.SlotItemHandler;
-import net.trentv.gasesdynamics.GasesDynamics;
 
 public class TileEntityGasFurnace extends TileEntity
 {
@@ -97,30 +93,6 @@ public class TileEntityGasFurnace extends TileEntity
 		public boolean canInteractWith(EntityPlayer playerIn)
 		{
 			return true;
-		}
-	}
-
-	public static class GuiGasFurnace extends GuiContainer
-	{
-		private static final ResourceLocation BACKGROUND = new ResourceLocation(GasesDynamics.MODID, "textures/gui/container/gasfurnace.png");
-
-		public GuiGasFurnace(Container inventorySlotsIn)
-		{
-			super(inventorySlotsIn);
-		}
-
-		@Override
-		protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY)
-		{
-			GlStateManager.color(1, 1, 1, 1);
-			mc.getTextureManager().bindTexture(BACKGROUND);
-			drawTexturedModalRect((width - xSize) / 2, (height - ySize) / 2, 0, 0, xSize, ySize);
-		}
-
-		@Override
-		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
-		{
-
 		}
 	}
 }
