@@ -1,0 +1,7 @@
+itemGroup.gasesdynamics=气体动力
+
+item.gasthrower.name=气体喷射器
+item.gas_grenade.name=燃气手雷
+item.gas_grenade_lit.name=引燃的燃气手雷
+
+tile.gas_furnace.name=燃气炉
